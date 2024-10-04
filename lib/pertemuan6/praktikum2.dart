@@ -1,3 +1,5 @@
+// kode di bawah diambil dari main.dart praktikum 2
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -9,7 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     Color color = Theme.of(context).primaryColor; //mendapatkan warna utama tema
 
-    // Membuat buttonSection
     Widget buttonSection = Row(
       mainAxisAlignment:
           MainAxisAlignment.spaceEvenly, //menyebar rata pada baris
@@ -20,37 +21,18 @@ class MyApp extends StatelessWidget {
       ],
     );
 
-    // Membuat textSection
-    Widget textSection = Container(
-      padding: const EdgeInsets.all(32),
-      child: const Text(
-        'Gunung Batu Jonggol '
-        'bisa dijadikan tempat untuk para pendaki pemula'
-        'naik gunung, sebab tingginya tidak mencapai 1.000 mdpl.       '
-        'Nama: Muhammad Ariel Saputra dengan '
-        'NIM: 2241720034. ',
-        softWrap: true, //agar teks otomatis membungkus sesuai batas kolom
-      ),
-    );
-
     return MaterialApp(
       title: 'Flutter layout: Muhammad Ariel Saputra dan 2241720034 Anda',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter layout demo Ariel'),
         ),
-        body: ListView(
-          //mengganti dari Column ke ListView, karena mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment
+              .start, // Mengatur crossAxis agar dimulai dari kiri
           children: [
-            Image.asset(
-              'images/gunung_batu.jpg',
-              width: 600,
-              height: 240,
-              fit: BoxFit.cover,
-            ),
             titleSection, // Menampilkan titleSection di bagian atas
-            buttonSection,
-            textSection, // Menampilkan buttonSection di bawah titleSection
+            buttonSection, // Menampilkan buttonSection di bawah titleSection
           ],
         ),
       ),
