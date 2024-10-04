@@ -1,6 +1,6 @@
-# pertemuan6
+# Laporan Praktikum
 
-A new Flutter project.
+Flutter project 2024/2025.
 
 ## Getting Started
 
