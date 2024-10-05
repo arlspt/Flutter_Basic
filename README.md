@@ -1,16 +1,20 @@
-# Laporan Praktikum
+# Laporan Praktikum Pemrograman Mobile
 
 Flutter project 2024/2025.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Laporan Pembelajaran Dart.
+- [Laporan Praktikum Pertemuan 1](../Dart/bin/)
+- [Laporan Praktikum Pertemuan 5](../Flutter_Basic/lib/pertemuan5/laporan.md)
+<br>
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+Laporan Pembelajaran Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Laporan Praktikum Pertemuan 5](../Flutter_Basic/lib/pertemuan5/laporan.md)
+- [Laporan Praktikum Pertemuan 6](../Flutter_Basic/lib/pertemuan6/laporan.md)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br>
+<br>
+

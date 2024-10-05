@@ -56,8 +56,8 @@ dev_dependencies:
 flutter:
     uses-material-design: true
     assets:
-      - images/logo_polinema.png
-      - images/gunung_batu.jpg
+      - assets/images/logo_polinema.png
+      - assets/images/gunung_batu.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
