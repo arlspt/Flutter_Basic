@@ -1,32 +1,56 @@
 import 'package:flutter/material.dart';
+import '../models/item.dart';
+import '../widgets/footer.dart';
 
 class ItemPage extends StatelessWidget {
-  final String itemName;
-  final int itemPrice;
-
-  // Constructor untuk menerima data item dari halaman sebelumnya
-  ItemPage({required this.itemName, required this.itemPrice});
-
   @override
   Widget build(BuildContext context) {
+    // Ambil arguments yang dikirim dari halaman sebelumnya dan konversikan ke model Item
+    final itemArgs = ModalRoute.of(context)!.settings.arguments as Item;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail $itemName'),
+        title: Text('Item Details'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Nama Barang: $itemName',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            Hero(
+              tag: itemArgs.name,
+              child: Center(
+                // Gunakan tag yang sama seperti di HomePage
+                child: Image.asset(
+                  itemArgs.imageUrl,
+                  fit: BoxFit.cover,
+                  width: 200,
+                  height: 200,
+                ),
+              ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 16),
             Text(
-              'Harga: Rp $itemPrice',
-              style: TextStyle(fontSize: 18),
+              itemArgs.name,
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
+            const SizedBox(height: 8),
+            Text(
+              'Item Price: Rp. ${itemArgs.price}',
+              style: const TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Stock: ${itemArgs.stock}',
+              style: const TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Rating: ${itemArgs.rating}',
+              style: const TextStyle(fontSize: 20),
+            ),
+            const Spacer(),
+            const Footer(),
           ],
         ),
       ),

@@ -4,15 +4,21 @@ import 'pertemuan6/belanja/pages/item_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute:
-        '/', // Mendefinisikan halaman awal sebagai '/' yaitu ke HomePage
+    initialRoute: '/',
     routes: {
-      '/': (context) => HomePage(), // Route untuk halaman HomePage
-      '/item': (context) => ItemPage(
-            // Ketika menavigasi ke halaman ItemPage, data itemName dan itemPrice harus diterima
-            itemName: ModalRoute.of(context)!.settings.arguments as String,
-            itemPrice: ModalRoute.of(context)!.settings.arguments as int,
-          ),
+      '/': (context) => HomePage(),
+      '/item': (context) => ItemPage(),
     },
   ));
+}
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }

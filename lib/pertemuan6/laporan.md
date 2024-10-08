@@ -24,3 +24,10 @@
 ![](images/05.png)
 
 ## **Tugas Praktikum 2**
+
+**Soal 1,2, dan 3** <br>
+HomePage <br>
+![](images/06.png) <br>
+ItemPage <br>
+![](images/07.png) <br>
+

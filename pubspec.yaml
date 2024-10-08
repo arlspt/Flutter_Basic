@@ -58,6 +58,10 @@ flutter:
     assets:
       - assets/images/logo_polinema.png
       - assets/images/gunung_batu.jpg
+      - assets/images/beras.jpeg
+      - assets/images/garam.jpg
+      - assets/images/gula.jpeg
+      - assets/images/susu.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
