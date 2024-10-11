@@ -1,4 +1,4 @@
-# **Pertemuan 7 - Praktikum Menerapkan Plugin di Project Flutter**
+# **Pertemuan 7 - Manajemen Plugin**
 <br>
 
 #### **Langkah 1, 2, 3**

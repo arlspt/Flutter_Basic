@@ -1,14 +1,5 @@
-# Nama: Muhammad Ariel Saputra
-# NIM: 2241720034
-# Kelas: TI-3D
+# **pertemuan 5 - Aplikasi Pertama dan Widget Dasar Flutter**
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-# pertemuan 5
 
 ## Praktikum 1: Membuat Project Flutter Baru
 Telah berhasil membuat project Flutter baru.

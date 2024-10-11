@@ -1,10 +1,4 @@
-#### Nama: Muhammad Ariel Saputra
-#### NIM: 224172034
-#### Kelas: TI-3D
-<br>
-<br>
-
-# **Pertemuan 6**
+# **Pertemuan 6 - Layout dan Navigasi**
 <br>
 
 ### **Praktikum 1: Membangun Layout di Flutter**
