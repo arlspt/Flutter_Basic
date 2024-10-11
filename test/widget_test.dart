@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:pertemuan5/main.dart';
+import 'package:pertemuan5/pertemuan6/praktikum1.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

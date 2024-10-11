@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyTextWidget extends StatelessWidget {
+  // ignore: use_super_parameters
   const MyTextWidget({Key? key}) : super(key: key);
 
   @override

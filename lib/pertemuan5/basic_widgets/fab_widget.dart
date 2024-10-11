@@ -18,8 +18,8 @@ class FabWidget extends StatelessWidget {
             // Tambahkan aksi yang ingin dilakukan saat FAB ditekan
             print("FAB ditekan!");
           },
-          child: const Icon(Icons.thumb_up),
           backgroundColor: Colors.pink,
+          child: const Icon(Icons.thumb_up),
         ),
       ),
     );
